@@ -1,3 +1,4 @@
+
 import json
 import requests
 import warnings
@@ -15,7 +16,7 @@ user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 
 # API Key 和 请求URL的模板
 # 判断是否在本地运行，如果是则从环境变量中获取API Key
-if os.getenv("qx9sB0WG5yYlZYuNZubjDm3w9m") is None:
+if os.getenv("LIJIANGAPI_TOKEN") is None:
     print("本地运行，从环境变量中加载并获取API Key")
     from dotenv import load_dotenv
     load_dotenv()
