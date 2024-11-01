@@ -15,15 +15,15 @@ user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 
 # API Key 和 请求URL的模板
 # 判断是否在本地运行，如果是则从环境变量中获取API Key
-if os.getenv("LIJIANGAPI_TOKEN") is None:
+if os.getenv("qx9sB0WG5yYlZYuNZubjDm3w9m") is None:
     print("本地运行，从环境变量中加载并获取API Key")
     from dotenv import load_dotenv
     load_dotenv()
 else:
     print("在服务器上运行，从环境变量中获取API Key")
 
-api_key = os.getenv("LIJIANGAPI_TOKEN")
-api_url_template = "https://api.76.al/api/web/query?key={qx9sB0WG5yYlZYuNZubjDm3w9m}&url={}"
+api_key = os.getenv("qx9sB0WG5yYlZYuNZubjDm3w9m")
+api_url_template = "https://api.76.al/api/web/query?key={}&url={}"
 
 # 代理链接的模板，代理是通过在代理地址后加目标 URL 来请求，代理地址确保以 / 结尾
 proxy_url = os.getenv("PROXY_URL")
