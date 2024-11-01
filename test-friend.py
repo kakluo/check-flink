@@ -23,7 +23,7 @@ else:
     print("在服务器上运行，从环境变量中获取API Key")
 
 api_key = os.getenv("LIJIANGAPI_TOKEN")
-api_url_template = "https://api.76.al/api/web/query?key={}&url={}"
+api_url_template = "https://api.76.al/api/web/query?key={qx9sB0WG5yYlZYuNZubjDm3w9m}&url={}"
 
 # 代理链接的模板，代理是通过在代理地址后加目标 URL 来请求，代理地址确保以 / 结尾
 proxy_url = os.getenv("PROXY_URL")
@@ -103,7 +103,7 @@ def check_link_accessibility(item):
     return [item, latency]
 
 # 目标JSON数据的URL
-json_url = 'https://blog.liushen.fun/flink_count.json'
+json_url = 'https://hexo.200038.xyz/flink_count.json'
 
 # 发送HTTP GET请求获取JSON数据
 response = requests.get(json_url)
